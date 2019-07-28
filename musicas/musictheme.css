@@ -1,0 +1,31 @@
+/* Dark Theme */
+body:not(.touch) * { text-shadow: -.0000001px 0 0 #aaa }
+	*:before, #tree li.parent { text-shadow: none !important }
+
+#splash { color: #aaa }
+
+body {
+	filter: invert(94%);
+	background: #1a1a1a;
+}
+
+button:not(.drop) { filter: grayscale(100%) }
+
+#cover {
+	filter: brightness(60%) grayscale(40%) invert(100%);
+	transition: filter .5s, max-width .5s, max-height .5s, min-width .5s, min-height .5s, opacity .1s;
+}
+	#cover:hover, #cover.nofade { filter: brightness(100%) grayscale(0%) invert(100%) }
+
+#playlist li[error="1"] { color: cyan }
+
+/* Display songs in tree horizontally 
+#tree li.song {
+	display: inline-block;
+	margin-right: 2.5em;
+}
+*/
+
+/* Set a fixed height for the playlist
+#playlist { height: 7.75em !important }
+*/

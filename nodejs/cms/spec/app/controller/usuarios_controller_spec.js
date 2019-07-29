@@ -18,14 +18,14 @@ describe("O controller de usuarios", function() {
     });
 	});
 
-  describe("GET /usuarios.json?nome=danilo - deve retornar no serviço todos os usuarios que tenham o nome de danilo", function() {
+  describe("GET /usuarios.json?nome=Marcelo Motta - deve retornar no serviço todos os usuarios que tenham o nome de Marcelo Motta", function() {
     beforeEach(function(done) {
       Usuario.excluirTodos(function(retorno1){
         var usuario = new Usuario();
-        usuario.nome = "Danilo com teste";
-        usuario.login = "didox";
-        usuario.senha = "123";
-        usuario.email = "danilo@beminfinito.com.br";
+        usuario.nome = "Marcelo Motta com teste";
+        usuario.login = "codex";
+        usuario.senha = "c310";
+        usuario.email = "codex@marcelomotta.com";
         usuario.salvar(function(retorno2){
           Usuario.todos(function(retorno3){
             if(!retorno3.erro){
@@ -37,8 +37,8 @@ describe("O controller de usuarios", function() {
       });
     });
 
-    it("deve retornar o status code de 200 e retornar o danilo no serviço", function(done) {
-      request.get(host + "/usuarios.json?nome=danilo", function(error, response, body) {
+    it("deve retornar o status code de 200 e retornar o Marcelo Motta no serviço", function(done) {
+      request.get(host + "/usuarios.json?nome=Marcelo Motta", function(error, response, body) {
         if(response === undefined){
           console.log("Não consegui localizar o servidor");
           expect(503).toBe(200);
@@ -47,7 +47,7 @@ describe("O controller de usuarios", function() {
           expect(response.statusCode).toBe(200);
           var json = JSON.parse(response.body);
           expect(json.length).toBe(1);
-          expect(json[0].nome).toBe("Danilo com teste");
+          expect(json[0].nome).toBe("Marcelo Motta com teste");
         }
         done();
       });
@@ -58,10 +58,10 @@ describe("O controller de usuarios", function() {
     it("deve retornar o status code de 200 e retornar somente 1 usuário", function(done) {
       Usuario.truncateTable(function(retorno1){
         var usuario = new Usuario();
-        usuario.nome = "Danilo com teste";
-        usuario.login = "didox";
-        usuario.senha = "123";
-        usuario.email = "danilo@beminfinito.com.br";
+        usuario.nome = "Marcelo Motta com teste";
+        usuario.login = "codex";
+        usuario.senha = "c310";
+        usuario.email = "codex@marcelomotta.com";
         usuario.salvar(function(retorno2){
           request.get(host + "/usuarios/1.json", function(error, response, body) {
             if(response === undefined){
@@ -109,7 +109,7 @@ describe("O controller de usuarios", function() {
       request.post({
         url: host + "/usuarios.json", 
         headers: {'auth_token': token}, 
-        form: {nome:'Joao 123', login:'joao', senha:'123', email:'joao@teste.com.br'}}, 
+        form: {nome:'Joao c310', login:'joao', senha:'c310', email:'joao@teste.com.br'}}, 
         function(error, response, body) {
         if(response === undefined){
           console.log("Não consegui localizar o servidor");
@@ -133,9 +133,9 @@ describe("O controller de usuarios", function() {
       Usuario.excluirTodos(function(retorno1){
         var usuario = new Usuario();
         usuario.nome = "usuário para atualizar";
-        usuario.login = "didox";
-        usuario.senha = "123";
-        usuario.email = "danilo@beminfinito.com.br";
+        usuario.login = "codex";
+        usuario.senha = "c310";
+        usuario.email = "codex@marcelomotta.com";
         usuario.salvar(function(retorno2){
           Usuario.todos(function(retorno3){
             if(!retorno3.erro){
@@ -193,9 +193,9 @@ describe("O controller de usuarios", function() {
       Usuario.excluirTodos(function(retorno1){
         var usuario = new Usuario();
         usuario.nome = "usuário novo";
-        usuario.login = "didox";
-        usuario.senha = "123";
-        usuario.email = "danilo@beminfinito.com.br";
+        usuario.login = "codex";
+        usuario.senha = "c310";
+        usuario.email = "codex@marcelomotta.com";
         usuario.salvar(function(retorno2){
           Usuario.todos(function(retorno3){
             if(!retorno3.erro){
@@ -241,9 +241,9 @@ describe("O controller de usuarios", function() {
       Usuario.excluirTodos(function(retorno1){
         var usuario = new Usuario();
         usuario.nome = "usuáro para excluir";
-        usuario.login = "didox";
-        usuario.senha = "123";
-        usuario.email = "danilo@beminfinito.com.br";
+        usuario.login = "codex";
+        usuario.senha = "c310";
+        usuario.email = "codex@marcelomotta.com";
         usuario.salvar(function(retorno2){
           Usuario.todos(function(retorno3){
             if(!retorno3.erro){

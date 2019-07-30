@@ -1,3 +1,6 @@
+<?php
+  include("parts/php/common/menu.php");
+?>
 
 <div id="control_player" class="content">
 <?php

@@ -1,270 +1,145 @@
 <!-- START MAIN -->
 <div id="main">
-		<!-- START WRAPPER -->
-		<div class="wrapper">
+	<!-- START WRAPPER -->
+	<div class="wrapper">
 
-				<!-- START LEFT SIDEBAR NAV-->
-				<aside id="left-sidebar-nav">
-						<ul id="slide-out" class="side-nav leftside-navigation">
-								<li class="user-details cyan darken-2">
-										<div class="row">
-												<div class="col col s4 m4 l4">
-														<img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
-												</div>
-												<div class="col col s8 m8 l8">
-														<ul id="profile-dropdown" class="dropdown-content">
-																<li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
-																</li>
-																<li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
-																</li>
-																<li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
-																</li>
-																<li class="divider"></li>
-																<li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
-																</li>
-																<li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
-																</li>
-														</ul>
-														<a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
-														<p class="user-roal">Administrator</p>
-												</div>
-										</div>
-								</li>
-								<li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
-						</li>
-						<li class="no-padding">
-								<ul class="collapsible collapsible-accordion">
-										<li class="bold"><a class="collapsible-header waves-effect waves-cyan active"><i class="mdi-action-view-carousel"></i> Layouts</a>
-												<div class="collapsible-body">
-														<ul>
-																<li class="active"><a href="layout-fullscreen.html">Full Screen</a>
-																</li>
-																<li><a href="layout-horizontal-menu.html">Horizontal Menu</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-								</ul>
-						</li>
-						<li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
-						</li>
-						<li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
-						</li>
-						<li class="no-padding">
-								<ul class="collapsible collapsible-accordion">
-										<li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> CSS</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="css-typography.html">Typography</a>
-																</li>
-																<li><a href="css-icons.html">Icons</a>
-																</li>
-																<li><a href="css-animations.html">Animations</a>
-																</li>
-																<li><a href="css-shadow.html">Shadow</a>
-																</li>
-																<li><a href="css-media.html">Media</a>
-																</li>
-																<li><a href="css-sass.html">Sass</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-palette"></i> UI Elements</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="ui-alerts.html">Alerts</a>
-																</li>
-																<li><a href="ui-buttons.html">Buttons</a>
-																</li>
-																<li><a href="ui-badges.html">Badges</a>
-																</li>
-																<li><a href="ui-breadcrumbs.html">Breadcrumbs</a>
-																</li>
-																<li><a href="ui-collections.html">Collections</a>
-																</li>
-																<li><a href="ui-collapsibles.html">Collapsibles</a>
-																</li>
-																<li><a href="ui-tabs.html">Tabs</a>
-																</li>
-																<li><a href="ui-navbar.html">Navbar</a>
-																</li>
-																<li><a href="ui-pagination.html">Pagination</a>
-																</li>
-																<li><a href="ui-preloader.html">Preloader</a>
-																</li>
-																<li><a href="ui-toasts.html">Toasts</a>
-																</li>
-																<li><a href="ui-tooltip.html">Tooltip</a>
-																</li>
-																<li><a href="ui-waves.html">Waves</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-av-queue"></i> Advanced UI <span class="new badge"></span></a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="advanced-ui-chips.html">Chips</a>
-																</li>
-																<li><a href="advanced-ui-cards.html">Cards</a>
-																</li>
-																<li><a href="advanced-ui-modals.html">Modals</a>
-																</li>
-																<li><a href="advanced-ui-media.html">Media</a>
-																</li>
-																<li><a href="advanced-ui-range-slider.html">Range Slider</a>
-																</li>
-																<li><a href="advanced-ui-sweetalert.html">SweetAlert</a>
-																</li>
-																<li><a href="advanced-ui-nestable.html">Shortable & Nestable</a>
-																</li>
-																<li><a href="advanced-ui-translation.html">Language Translation</a>
-																</li>
-																<li><a href="advanced-ui-highlight.html">Highlight</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Widgets</a>
-										</li>
-										<li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="table-basic.html">Basic Tables</a>
-																</li>
-																<li><a href="table-data.html">Data Tables</a>
-																</li>
-																<li><a href="table-jsgrid.html">jsGrid</a>
-																</li>
-																<li><a href="table-editable.html">Editable Table</a>
-																</li>
-																<li><a href="table-floatThead.html">floatThead</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment"></i> Forms <span class="new badge"></span></a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="form-elements.html">Form Elements</a>
-																</li>
-																<li><a href="form-layouts.html">Form Layouts</a>
-																</li>
-																<li><a href="form-validation.html">Form Validations</a>
-																</li>
-																<li><a href="form-masks.html">Form Masks</a>
-																</li>
-																<li><a href="form-file-uploads.html">File Uploads</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-social-pages"></i> Pages</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="page-contact.html">Contact Page</a>
-																</li>
-																<li><a href="page-todo.html">ToDos</a>
-																</li>
-																<li><a href="page-blog-1.html">Blog Type 1</a>
-																</li>
-																<li><a href="page-blog-2.html">Blog Type 2</a>
-																</li>
-																<li><a href="page-404.html">404</a>
-																</li>
-																<li><a href="page-500.html">500</a>
-																</li>
-																<li><a href="page-blank.html">Blank</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i> eCommers</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="eCommerce-products-page.html">Products Page</a>
-																</li>
-																<li><a href="eCommerce-pricing.html">Pricing Table</a>
-																</li>
-																<li><a href="eCommerce-invoice.html">Invoice</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-image"></i> Medias</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="media-gallary-page.html">Gallery Page</a>
-																</li>
-																<li><a href="media-hover-effects.html">Image Hover Effects</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-										<li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> User</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="user-profile-page.html">User Profile</a>
-																</li>
-																<li><a href="user-login.html">Login</a>
-																</li>
-																<li><a href="user-register.html">Register</a>
-																</li>
-																<li><a href="user-forgot-password.html">Forgot Password</a>
-																</li>
-																<li><a href="user-lock-screen.html">Lock Screen</a>
-																</li>
-																<li><a href="user-session-timeout.html">Session Timeout</a>
-																</li>
-														</ul>
-												</div>
-										</li>
+		<!-- START LEFT SIDEBAR NAV-->
+		<aside id="left-sidebar-nav">
+			<ul id="slide-out" class="side-nav leftside-navigation">
 
-										<li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
-												<div class="collapsible-body">
-														<ul>
-																<li><a href="charts-chartjs.html">Chart JS</a>
-																</li>
-																<li><a href="charts-chartist.html">Chartist</a>
-																</li>
-																<li><a href="charts-morris.html">Morris Charts</a>
-																</li>
-																<li><a href="charts-xcharts.html">xCharts</a>
-																</li>
-																<li><a href="charts-flotcharts.html">Flot Charts</a>
-																</li>
-																<li><a href="charts-sparklines.html">Sparkline Charts</a>
-																</li>
-														</ul>
-												</div>
-										</li>
-								</ul>
-						</li>
-						<li class="li-hover"><div class="divider"></div></li>
-						<li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
-						<li><a href="angular-ui.html"><i class="mdi-action-verified-user"></i> Angular UI  <span class="new badge"></span></a>
-						</li>
-						<li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
-						</li>
-						<li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
-						</li>
-						<li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
-						</li>
-						<li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
-						</li>
-						<li class="li-hover"><div class="divider"></div></li>
-						<li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
-						<li class="li-hover">
-								<div class="row">
-										<div class="col s12 m12 l12">
-												<div class="sample-chart-wrapper">
-														<div class="ct-chart ct-golden-section" id="ct2-chart"></div>
-												</div>
-										</div>
+				<div id="options">
+
+					<li class="user-details cyan darken-2">
+						<div class="row">
+							<div class="col col s4 m4 l4">
+								<img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+							</div>
+						</div>
+					</li>
+
+					<li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Controles</a>
+					</li>
+
+					<li class="no-padding">
+						<ul class="collapsible collapsible-accordion">
+							<li id="control_menu">
+								 <?php
+								      include("parts/php/player/controls.php");
+								    ?>
+							</li>
+
+							<li>
+								<a id="enqueue" title="Tocar musicas em Sequência pressione (E)" onclick="toggle(event)">S<u>e</u>quência</a>
+							</li>
+
+							<li>
+								<a id="random" title="Randomize upcoming playlist songs (R)" onclick="toggle(event)"><u>R</u>andomico</a>
+							</li>
+
+							<li>
+								<a id="crossfade" title="Crossfade between songs (O)" onclick="toggle(event)">Tr<u>a</u>nsição</a>
+							</li>
+							<!-- /*============================================================*/ -->
+							<li>
+								<div id="afterdiv">
+									<a id="after" title="Define action after last playlist item (A)" onclick="menu(event)"><u>D</u>epois de tocar</a>
+									<div id="afteroptions" onmouseleave="menu(event)" onclick="toggle(event)">
+										<a id="stopplayback" title="Stop playing songs after last playlist item">Parar</a>
+										<a id="repeatplaylist" title="Restart playback from the top">Repetir playlist</a>
+										<a id="playlibrary" title="Continue from last song's position in library">Continuar da Biblioteca</a>
+										<a id="randomlibrary" title="Randomly select unplayed songs from the library">Randomizar Biblioteca</a>
+										<a id="randomfiltered" title="Randomly select unplayed songs from the filtered library">Randomizar Filtrados<span></span></a>
+									</div>
 								</div>
-						</li>
+							</li>
 						</ul>
-						<a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light cyan"><i class="mdi-navigation-menu"></i></a>
-				</aside>
-				<!-- END LEFT SIDEBAR NAV-->
+					</li>
+
+
+					<li class="no-padding">
+						<ul class="collapsible collapsible-accordion">
+							<li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-grade"></i> Playlist</a>
+								<div class="collapsible-body">
+									<ul>
+										<li>
+										<a title="Clear the playlist (C)" onclick="clearPlaylist()" >Limpar</a>	
+										</li>
+
+										<li>
+											<div id="playlistsdiv">
+												<a id="load" title="Add songs from online playlist (D)" onclick="menu(event)">Carrega<u>r</u></a>
+												<div id="playlists" onmouseleave="menu(event)" onclick="loadPlaylistBtn(event)">
+												</div>
+											</div>
+										</li>
+										<li>
+											<a id="save" title="Save playlist online (V)" onclick="prepPlaylists('save')">Sal<u>v</u>ar</a>
+										</li>
+
+										<li>
+											<a id="import" title="Add songs from exported playlist (I)" onclick="importPlaylist()"><u>I</u>mportar</a>
+										</li>
+
+										<li>
+											<a id="export" title="Export current playlist to file (X)" onclick="exportPlaylist()">E<u>x</u>portar</a>
+										</li>
+
+										<li>
+											<a id="lock" title="Lock playlist and playback controls (L)" onclick="toggleLock()"><u>T</u>ravar</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+
+						</ul>
+					</li>
+					<li class="li-hover"><div class="divider"></div></li>
+
+
+					<li>
+						<a id="share" title="Share options (S)" onclick="toggle(event)"><u>C</u>ompartilhar</a>
+
+						<div id="shares">
+							<div class="folder sharediv">
+								<input id="folderuri" class="uri" onclick="this.select()" readonly>
+								<button id="folderdownload" class="download" title="Download folder" onclick="download('folder')"></button>
+								<button id="foldershare" class="link" title="Copy folder link to clipboard" onclick="share('folder')"></button>
+								<button id="folderwhatsapp" class="whatsapp hide" title="Share folder link via WhatsApp" onclick="shareWhatsApp('folder')"></button>
+							</div>
+							<div class="song sharediv">
+								<input id="songuri" class="uri" onclick="this.select()" readonly>
+								<button id="songdownload" class="download" title="Download song" onclick="download('song')"></button>
+								<button id="songshare" class="link" title="Copy song link to clipboard" onclick="share('song')"></button>
+								<button id="songwhatsapp" class="whatsapp hide" title="Share song link via WhatsApp" onclick="shareWhatsApp('song')"></button>
+							</div>
+							<div id="shareplaylist" class="playlist sharediv">
+								<input id="playlisturi" class="uri" placeholder="&#x25BE;" list="playlistdata" onchange="fillPlaylistUri()" onclick="this.select()" onfocus="prepPlaylists('share')">
+								<button id="clearuri" class="clear" title="Clear playlist field" onclick="dom.playlisturi.value = ''"></button>
+								<button id="playlistshare" class="link" title="Copy playlist link to clipboard" onclick="share('playlist')"></button>
+								<button id="playlistwhatsapp" class="whatsapp hide" title="Share playlist link via WhatsApp" onclick="shareWhatsApp('playlist')"></button>
+								<datalist id="playlistdata"></datalist>
+							</div>
+
+							<a id="a" class="hide" target="_blank" download></a>
+						</div>
+
+
+					</li>
+
+					<li class="li-hover"><p class="ultra-small margin more-text">Marcelo Motta</p></li>
+					<li class="li-hover">
+						<div class="row">
+							<div class="col s12 m12 l12">
+								<div class="sample-chart-wrapper">
+									<div class="ct-chart ct-golden-section" id="ct2-chart"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+
+			</ul>
+			<a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light cyan"><i class="mdi-navigation-menu"></i></a>
+		</aside>
+		<!-- END LEFT SIDEBAR NAV-->

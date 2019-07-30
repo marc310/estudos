@@ -1,5 +1,7 @@
  <div id="options">
+
    <button id="enqueue" title="Tocar musicas em Sequência pressione (E)" onclick="toggle(event)">S<u>e</u>quência</button>
+   
    <button id="random" title="Randomize upcoming playlist songs (R)" onclick="toggle(event)"><u>R</u>andomico</button>
    <button id="crossfade" title="Crossfade between songs (O)" onclick="toggle(event)">Tr<u>a</u>nsição</button>
    <button id="playlistbtn" title="Playlist options (P)" onclick="toggle(event)"><u>P</u>laylists</button>

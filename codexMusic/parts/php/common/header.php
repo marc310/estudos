@@ -3,7 +3,7 @@
 <head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link href="parts/theme/css/music.css" type="text/css" rel="stylesheet"/> -->
+		<link href="parts/theme/css/music.css" type="text/css" rel="stylesheet"/>
 		<!-- <link href="parts/theme/css/musictheme.css" type="text/css" rel="stylesheet"/> -->
 		<link href="parts/theme/imgs/music.png" type="image/png" rel="shortcut icon">
 		<script src="music.js"></script>
@@ -55,12 +55,14 @@
 					<nav class="navbar-color">
 							<div class="nav-wrapper">
 									<ul class="left">
-										<li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
+										<li><h1 class="logo-wrapper"><a href="#" class="brand-logo darken-1"><img src="images/logo.png" alt="CodeX logo"></a> <span class="logo-text">Marcelo Motta</span></h1></li>
 									</ul>
+
 									<div class="header-search-wrapper hide-on-med-and-down">
 											<i class="mdi-action-search"></i>
 											<input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize"/>
 									</div>
+
 									<ul class="right hide-on-med-and-down">
 											<li><a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button"  data-activates="translation-dropdown"><img src="images/flag-icons/United-States.png" alt="USA" /></a>
 											</li>
@@ -74,7 +76,7 @@
 											</li>
 									</ul>
 									<!-- translation-button -->
-									<ul id="translation-dropdown" class="dropdown-content">
+									<!-- <ul id="translation-dropdown" class="dropdown-content">
 										<li>
 											<a href="#!"><img src="images/flag-icons/United-States.png" alt="English" />  <span class="language-select">English</span></a>
 										</li>
@@ -88,7 +90,7 @@
 											<a href="#!"><img src="images/flag-icons/Germany.png" alt="German" />  <span class="language-select">German</span></a>
 										</li>
 
-									</ul>
+									</ul> -->
 									<!-- notifications-dropdown -->
 									<ul id="notifications-dropdown" class="dropdown-content">
 										<li>

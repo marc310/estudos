@@ -8,43 +8,58 @@
 ?>
 </div>
 
-<div class="content">
-<?php
-  include("parts/php/options.php");
-  ?>
-</div>
-<div class="content">
-  <h1>Playlist</h1>
+<div class="center">
   <?php
-  include("parts/php/playlist.php");
+  include("parts/php/library.php");
   ?>
 </div>
 
-<div class="content">
-  <h1>Biblioteca</h1>
+<!-- <div class="row center">
 <?php
-  include("parts/php/library.php");
+  include("parts/php/options.php");
 ?>
-</div>
+</div> -->
+
 
 <script src="parts/js/codex.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-// // When the user scrolls the page, execute myFunction
-// window.onscroll = function() {myFunction()};
-//
-// // Get the header
-// var header = document.getElementById("control_player");
-//
-// // Get the offset position of the navbar
-// var sticky = header.offsetTop;
-//
-// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("controls");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+header.nextElementSibling;
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 // function myFunction() {
 //   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
+//     header.classList.add("navbar-fixed");
+//     header.style.position = "fixed";
 //   } else {
-//     header.classList.remove("sticky");
+//     header.classList.remove("navbar-fixed");
+//     header.style.position = "relative";
+
 //   }
 // }
+function myFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    header.classList.add("navbar-fixed");
+    header.style.position = "fixed";
+    header.style.top = "60px";
+    header.style.left = "21%";
+  }
+  else{
+    header.classList.remove("navbar-fixed");
+    header.style.position = "relative";
+    header.style.top = "0px";
+    header.style.left = "0px";
+
+
+  }
+}
+
 </script>

@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      Home\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <ion-card class=\"welcome-card\">\n      <img src=\"/assets/shapes.svg\" alt=\"\" />\n      <ion-card-header>\n        <ion-card-subtitle>Iniciando Desenvolvimento em Android</ion-card-subtitle>\n        <ion-card-title>Bemvindo ao Ionic</ion-card-title>\n      </ion-card-header>\n      <ion-card-content>\n\n        <ion-button (click)=\"openUrl()\">Abrir Pag</ion-button>\n\n        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>\n      </ion-card-content>\n    </ion-card>\n    <ion-list lines=\"none\">\n      <ion-list-header>\n        <ion-label>Resources</ion-label>\n      </ion-list-header>\n      <ion-item href=\"https://marcelomotta.com\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"book\"></ion-icon>\n        <ion-label>Website do Desenvolvedor</ion-label>\n      </ion-item>\n      <ion-item href=\"https://ionicframework.com/docs/\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"book\"></ion-icon>\n        <ion-label>Ionic Documentation</ion-label>\n      </ion-item>\n      <ion-item href=\"https://ionicframework.com/docs/building/scaffolding\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"build\"></ion-icon>\n        <ion-label>Scaffold Out Your App</ion-label>\n      </ion-item>\n      <ion-item href=\"https://ionicframework.com/docs/layout/structure\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"grid\"></ion-icon>\n        <ion-label>Change Your App Layout</ion-label>\n      </ion-item>\n      <ion-item href=\"https://ionicframework.com/docs/theming/basics\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"color-fill\"></ion-icon>\n        <ion-label>Theme Your App</ion-label>\n      </ion-item>\n    </ion-list>\n</ion-content>\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      Home\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <ion-card class=\"welcome-card\">\n      <img src=\"/assets/shapes.svg\" alt=\"\" />\n      <ion-card-header>\n        <ion-card-subtitle>Iniciando Desenvolvimento em Android</ion-card-subtitle>\n        <ion-card-title>Bemvindo ao Ionic</ion-card-title>\n      </ion-card-header>\n      <ion-card-content>\n\n        <ion-button (click)=\"openUrl()\">Abrir Pag</ion-button>\n\n        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>\n      </ion-card-content>\n    </ion-card>\n    <ion-list lines=\"none\">\n      <ion-list-header>\n        <ion-label>Resources</ion-label>\n      </ion-list-header>\n      <ion-item href=\"https://marcelomotta.com\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"book\"></ion-icon>\n        <ion-label>Website do Desenvolvedor</ion-label>\n      </ion-item>\n      <ion-item href=\"http://localhost/musicas/\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"book\"></ion-icon>\n        <ion-label>Musicas</ion-label>\n      </ion-item>\n      <ion-item href=\"http://localhost/\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"build\"></ion-icon>\n        <ion-label>Localhost</ion-label>\n      </ion-item>\n      <ion-item href=\"https://ionicframework.com/docs/layout/structure\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"grid\"></ion-icon>\n        <ion-label>Change Your App Layout</ion-label>\n      </ion-item>\n      <ion-item href=\"https://ionicframework.com/docs/theming/basics\">\n        <ion-icon slot=\"start\" color=\"medium\" name=\"color-fill\"></ion-icon>\n        <ion-label>Theme Your App</ion-label>\n      </ion-item>\n    </ion-list>\n</ion-content>\n"
 
 /***/ }),
 
@@ -81,35 +81,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePage", function() { return HomePage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic-native/in-app-browser/ngx */ "./node_modules/@ionic-native/in-app-browser/ngx/index.js");
 
 
-
+// import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 let HomePage = class HomePage {
-    constructor(iab) {
-        this.iab = iab;
-    }
-    owp(url) {
-        const browser = this.iab.create(url, '_self');
-        // browser.executeScript(...);
-        //
-        // browser.insertCSS(...);
-        // browser.on('loadstop').subscribe(event => {
-        //    browser.insertCSS({ code: "body{color: red;" });
-        // });
-        browser.close();
-    }
+    // options : InAppBrowserOptions = {
+    //   location : 'yes',//Or 'no'
+    //   hidden : 'no', //Or  'yes'
+    //   clearcache : 'yes',
+    //   clearsessioncache : 'yes',
+    //   zoom : 'yes',//Android only ,shows browser zoom controls
+    //   hardwareback : 'yes',
+    //   mediaPlaybackRequiresUserAction : 'no',
+    //   shouldPauseOnSuspend : 'no', //Android only
+    //   closebuttoncaption : 'Close', //iOS only
+    //   disallowoverscroll : 'no', //iOS only
+    //   toolbar : 'yes', //iOS only
+    //   enableViewportScale : 'no', //iOS only
+    //   allowInlineMediaPlayback : 'no',//iOS only
+    //   presentationstyle : 'pagesheet',//iOS only
+    //   fullscreen : 'yes',//Windows only
+    // };
+    // constructor(private iab: InAppBrowser) {}
+    constructor() { }
 };
-HomePage.ctorParameters = () => [
-    { type: _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_2__["InAppBrowser"] }
-];
 HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-home',
         template: __webpack_require__(/*! raw-loader!./home.page.html */ "./node_modules/raw-loader/index.js!./src/app/home/home.page.html"),
         styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_2__["InAppBrowser"]])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], HomePage);
 
 

@@ -7,21 +7,21 @@ var
 	nodupes = false,		// Don't add already played songs to playlist
 	onlinepls = true,	// Show buttons to load/save playlists online
 	whatsapp = true,	// Add button to share directly to WhatsApp
-	whatsappmsg = 'Have a listen to',	// Default WhatsApp message
+	whatsappmsg = 'Cara! você precisa ouvir isso!',	// Default WhatsApp message
 	maxvolume = .9,	// Default volume (.9 might prevent clipping during playback)
 
-	errorcf = 'Your browser is set to disable autoplay: re-enable crossfade manually',
-	playlistdesc = 'L: Play now\nR: Find in library',
-	addfolderdlg = 'Add this folder to playlist?',
-	whatsappdlg = 'Your message via WhatApp (the url will be added at the end):',
-	exportdlg = 'Save playlist as:',
-	overwritedlg = 'Playlist already exists. Overwrite?',
+	errorcf = 'Seu navegador está configurado para desativar a reprodução automática: reativar a transição manualmente',
+	playlistdesc = 'L: Tocar Agora\nR: Buscar na Biblioteca',
+	addfolderdlg = 'Adicionar esta pasta à playlist?',
+	whatsappdlg = 'Sua mensagem via WhatApp (the url will be added at the end):',
+	exportdlg = 'Salvar Playlist Como:',
+	overwritedlg = 'Playlist já existe, deseja Sobrescrever?',
 	prevpassdlg = '[Use previously set password]',
 	passdlg = 'Enter password:',
 	wrongpassdlg = 'Intruder alert!',
-	noplaylists = 'No playlists available',
-	errorsave = 'Error on saving:',
-	clearplaylistdlg = 'Clear the playlist?',
+	noplaylists = 'Nenhuma playlist disponível',
+	errorsave = 'Erro ao Salvar:',
+	clearplaylistdlg = 'Limpar playlist?',
 
 	audio,
 	base,
@@ -159,7 +159,7 @@ function init() {
 		buildPlaylist();
 		document.documentElement.className = '';
 		get('splash').className = '';
-		console.log('https://github.com/ltGuillaume/MusicFolderPlayer'+ (mode ? '' : '\nSong count: '+ songs.length));
+		console.log('Músicas Disponíveis na Biblioteca'+ (mode ? '' : '\nTotal: '+ songs.length));
 		if (songs.length == 1) prepSongMode();
 		if (autoplay) playPause();
 	};
@@ -587,7 +587,7 @@ function timeTxt(t) {
 }
 
 function zoom() {
-	dom.player.className = (dom.player.className == '' ? 'zoom' : 
+	dom.player.className = (dom.player.className == '' ? 'zoom' :
 		(dom.player.className == 'zoom' ? 'fullzoom' : ''));
 }
 

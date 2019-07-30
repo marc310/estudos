@@ -1,0 +1,57 @@
+/* Dark Theme */
+body:not(.touch) * { text-shadow: -.0000001px 0 0 #aaa }
+	*:before, #tree li.parent { text-shadow: none !important }
+
+#splash { color: #aaa }
+
+body {
+	filter: invert(94%);
+	background: #1a1a1a;
+}
+
+button:not(.drop) { filter: grayscale(100%) }
+
+h1{
+	padding: 20px;
+}
+
+#cover {
+	filter: brightness(60%) grayscale(40%) invert(100%);
+	transition: filter .5s, max-width .5s, max-height .5s, min-width .5s, min-height .5s, opacity .1s;
+}
+	#cover:hover, #cover.nofade { filter: brightness(100%) grayscale(0%) invert(100%) }
+
+#playlist li[error="1"] { color: cyan }
+
+/* Display songs in tree horizontally
+#tree li.song {
+	display: inline-block;
+	margin-right: 2.5em;
+}
+*/
+
+/* Set a fixed height for the playlist
+#playlist { height: 7.75em !important }
+*/
+
+/* Style the navbar */
+#control_player {
+  overflow: hidden;
+}
+
+/* Navbar links */
+#control_player a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 9999;
+} */

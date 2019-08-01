@@ -11,7 +11,7 @@
 
 
 
-<div class="fixed-action-btn horizontal" style="position: fixed; display: inline-block; right: 20px;">
+<!-- <div class="fixed-action-btn horizontal" style="position: fixed; display: inline-block; right: 20px;">
   <a class="btn-floating btn-large red">
     <i class="mdi-social-notifications-none"></i>
   </a>
@@ -29,13 +29,17 @@
   </li>
 
 </ul>
-</div>
+</div> -->
 <script src="parts/js/codex.js" type="text/javascript"></script>
 
 <script type="text/javascript">
+//
+$(document).ready(function(){
+	$('.tooltipped').tooltip({delay: 50});
+});
+//
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
-
 // Get the header
 var header = document.getElementById("controls");
 

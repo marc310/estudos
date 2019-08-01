@@ -12,36 +12,65 @@
                 </div>
                 <div class="card-content">
 
-
                   <?php
                   include("parts/php/player/current.php");
                   ?>
-                </div>
-                <div class="card-action">
 
+                </div>
+
+                <div class="card-action">
+                  <!-- BOTOES DE AÇÕES DE MENU -->
                 <div class="col s12 m4 l3 center" id="play_action_btn"
-                style="padding-bottom:20px">
+                style="padding-bottom:30px">
                   <ul style="display: inline-flex;">
 
                     <li>
-                      <a class="btn-floating darken-1" title="Volume" onclick="tVolume();"><i class="mdi-av-volume-up"></i></a>
+                      <a class="btn-floating tooltipped darken-1" 
+                      onclick="tVolume();"
+                      data-position="top" 
+                      data-delay="50" 
+                      data-tooltip="Volume">
+                      <i class="mdi-av-volume-up"></i></a>
                     </li>
 
-                    <li>
-                      <a class="btn-floating red darken-1" onclick="eLibrary();"><i class="large mdi-editor-insert-chart"></i></a>
+                    <li style="margin-left: 10px">
+                      <a class="btn-floating tooltipped red darken-1" 
+                      onclick="eLibrary();"
+                      data-position="top" 
+                      data-delay="50" 
+                      data-tooltip="Mostrar Biblioteca">
+                        <i class="large mdi-editor-insert-chart"></i></a>
                     </li>
 
-                    <li>
-                      <a class="btn-floating yellow darken-1" onclick="eList();"><i class="large mdi-editor-format-quote"></i></a>
+                    <li style="margin-left: 10px">
+                      <a class="btn-floating tooltipped yellow darken-1" 
+                      onclick="eList();"
+                      data-position="top" 
+                      data-delay="50" 
+                      data-tooltip="Mostrar Fila de Reprodução">
+                      <i class="large mdi-editor-format-quote"></i></a>
                     </li>
 
-                    <li>
-                      <a class="btn-floating green darken-1" onclick="eOptions();"><i class="large mdi-editor-publish"></i></a>
+                    <li style="margin-left: 10px">
+                      <a class="btn-floating tooltipped green darken-1" 
+                      onclick="eOptions();"
+                      data-position="top" 
+                      data-delay="50" 
+                      data-tooltip="Mostrar Opções">
+                      <i class="large mdi-editor-publish"></i></a>
+                    </li>
+
+                    <li style="margin-left: 10px">
+                      <a class="btn-floating tooltipped blue" 
+                      onclick="clearPlaylist()"
+                      data-position="top" 
+                      data-delay="50" 
+                      data-tooltip="Limpar Fila de Reprodução">
+                      <i class="large mdi-editor-attach-file"></i></a>
                     </li>
 
                   </ul>
                 </div>
-                <div class="divider"></div>
                   <?php
                   include("parts/php/playlist.php");
                   ?>

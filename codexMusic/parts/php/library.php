@@ -1,15 +1,11 @@
- <div id="library">
+ <div id="library" style="display: none;">
+
+  <div class="divider"></div>
 
 
-
-   <div id="image-card" class="section">
-    <div class="row">
-      <div class="col s12 m8 l9">
-        <div class="row">
+  
           <div class="col s12 m8 l9">
-            <div class="card">
               <h4>Biblioteca</h4>
-              <div class="card-image">
                 
                 <div class="content">
 
@@ -22,13 +18,7 @@
                   title="L: Open folder | Play/Enqueue song (Enter)&#xA;R: Enqueue folder | Play next (Shift-Enter)"></div>
 
 
-                </div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 

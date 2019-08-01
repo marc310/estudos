@@ -1,3 +1,24 @@
+<!-- CARD opções e playlist -->
+  <div class="row center" id="opcoes" style="display: none;">
+    <?php
+    include("parts/php/options.php");
+    ?>
+  </div> 
+
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START FOOTER -->
+    <footer class="page-footer">
+        
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2019 <a class="grey-text text-lighten-4" href="http://marcelomotta.com" target="_blank">Marcelo Motta</a> <!-- Todos os direitos Reservados. -->
+                <span class="right"> Desenvolvido por <a class="grey-text text-lighten-4" href="http://marcelomotta.com/">Marcelo Motta</a></span>
+            </div>
+        </div>
+    </footer>
+
 
 
 <!-- ================================================

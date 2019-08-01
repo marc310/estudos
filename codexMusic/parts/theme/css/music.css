@@ -295,7 +295,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 }
 
 #playlistdiv > div {	position: relative }
-
+/*
 #clear {
 	display: none;
 	position: absolute;
@@ -312,7 +312,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 		border-left: 1px solid #eee;
 	}
 	#clear.drop { color: #ef6c00 }
-
+*/
 #playlist {
 	min-height: 2.25em;
 	max-height: 10.25em;
@@ -406,7 +406,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 *:before {
 	display: inline-block;
 	width: 1em;
-	font-family: Foundation;
+	/*font-family: Foundation;*/
 	text-align: center;
 }
 
@@ -423,7 +423,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 	#lock.on:before { content: "\f20a" !important }
 #next:before { content: "\f17c" }
 #options:before { content: "\f214" }
-/* #player:before { content: "\f153" } */
+ #player:before { content: "\f153" } 
 #playlistbtn:before { content: "\f18e" }
 /* #playlistdiv:before { content: "\f103" } */
 #playpause:before, #playlibrary:before { content: "\f198" }

@@ -22,10 +22,12 @@
 
 					<li class="no-padding">
 						<ul class="collapsible collapsible-accordion">
-							<li id="control_menu">
+							<li id="control_menu" hidden>
+								<div style="display: inline-block!important;">
 								 <?php
 								      include("parts/php/player/controls.php");
 								    ?>
+								</div>
 							</li>
 
 							<li>

@@ -1,12 +1,16 @@
  <div id="options">
-
-   <button id="enqueue" title="Tocar musicas em Sequência pressione (E)" onclick="toggle(event)">S<u>e</u>quência</button>
+           
+   <button id="enqueue" class="waves-effect waves-light  btn" title="Tocar musicas em Sequência pressione (E)" onclick="toggle(event)">S<u>e</u>quência</button>
    
-   <button id="random" title="Randomize upcoming playlist songs (R)" onclick="toggle(event)"><u>R</u>andomico</button>
-   <button id="crossfade" title="Crossfade between songs (O)" onclick="toggle(event)">Tr<u>a</u>nsição</button>
-   <button id="playlistbtn" title="Playlist options (P)" onclick="toggle(event)"><u>P</u>laylists</button>
-   <button id="share" title="Share options (S)" onclick="toggle(event)"><u>C</u>ompartilhar</button>
-   <button id="lock" title="Lock playlist and playback controls (L)" onclick="toggleLock()"><u>T</u>ravar</button>
+   <button id="random" class="waves-effect waves-light  btn" title="Randomize upcoming playlist songs (R)" onclick="toggle(event)"><u>R</u>andomico</button>
+
+   <button id="crossfade" class="waves-effect waves-light  btn" title="Crossfade between songs (O)" onclick="toggle(event)">Tr<u>a</u>nsição</button>
+
+   <button id="playlistbtn" class="waves-effect waves-light  btn" title="Playlist options (P)" onclick="toggle(event)"><u>P</u>laylists</button>
+
+   <button id="share" class="waves-effect waves-light  btn" title="Share options (S)" onclick="toggle(event)"><u>C</u>ompartilhar</button>
+
+   <button id="lock" class="waves-effect waves-light  btn" title="Lock playlist and playback controls (L)" onclick="toggleLock()"><u>T</u>ravar</button>
 
    <div id="playlistoptions">
      <div id="playlistsdiv">

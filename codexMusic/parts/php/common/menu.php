@@ -42,7 +42,7 @@
 								<a id="crossfade" title="Crossfade between songs (O)" onclick="toggle(event)">Tr<u>a</u>nsição</a>
 							</li>
 							<!-- /*============================================================*/ -->
-							<li>
+							<!-- <li>
 								<div id="afterdiv">
 									<a id="after" title="Define action after last playlist item (A)" onclick="menu(event)"><u>D</u>epois de tocar</a>
 									<div id="afteroptions" onmouseleave="menu(event)" onclick="toggle(event)">
@@ -53,7 +53,7 @@
 										<a id="randomfiltered" title="Randomly select unplayed songs from the filtered library">Randomizar Filtrados<span></span></a>
 									</div>
 								</div>
-							</li>
+							</li> -->
 						</ul>
 					</li>
 

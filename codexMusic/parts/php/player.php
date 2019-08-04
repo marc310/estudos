@@ -5,9 +5,13 @@
             <div class="col s12 m8 l9">
               <div class="card">
                 <div class="card-image">
-                  <img id="cover" src="parts/theme/imgs/music.png" title="Zoom to 300px, full size (Z)" onclick="zoom()" oncontextmenu="toggle(event)"/>
+                  
 
-                  <span id="time" class="card-title dim">00:00</span>
+                  <div id="img_player">
+                    <img id="cover" src="parts/theme/imgs/music.png" title="Zoom to 300px, full size (Z)" onclick="zoom()" oncontextmenu="toggle(event)"/>
+
+                    <span id="time" class="card-title dim">00:00</span>
+                  </div>
 
                 </div>
                 <div class="card-content">
@@ -15,6 +19,31 @@
                   <?php
                   include("parts/php/player/current.php");
                   ?>
+
+                  <div id="afterdiv" style="margin-top: 20px;">
+                    <div id="btn_afterPlay">
+                      <a id="after" class="waves-effect waves-light  btn" 
+                      title="Define action after last playlist item (A)" 
+                      onclick="menu(event)"><u>D</u>epois de tocar
+                      </a>
+                    </div>
+
+                    <div id="afteroptions" onmouseleave="menu(event)" onclick="toggle(event)">
+                        <a id="stopplayback" class="waves-effect waves-light btn" title="Stop playing songs after last playlist item">Parar
+                        </a>
+                        <a id="repeatplaylist" class="waves-effect waves-light btn"
+                        title="Restart playback from the top">Repetir playlist
+                        </a>
+                        <a id="playlibrary" class="waves-effect waves-light btn"
+                        title="Continue from last song's position in library">Continuar da Biblioteca
+                        </a>
+                        <a id="randomlibrary" class="waves-effect waves-light btn" 
+                        title="Randomly select unplayed songs from the library">Randomizar Biblioteca
+                        </a>
+                        <a id="randomfiltered" class="waves-effect waves-light btn" 
+                        title="Randomly select unplayed songs from the filtered library">Randomizar Filtrados<span></span></a>
+                    </div>
+                  </div>
 
                 </div>
 
@@ -73,6 +102,7 @@
 
                   </ul>
                 </div>
+
                   <?php
                   include("parts/php/playlist.php");
                   ?>

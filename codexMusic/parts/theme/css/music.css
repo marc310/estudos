@@ -418,6 +418,12 @@ li.over { border-top: 1px dotted #ef6c00 }
 	/*font-family: Foundation;*/
 	text-align: center;
 }
+.m-b20{
+	margin-bottom: 20px!important;
+}
+.m-b10{
+	margin-bottom: 10px!important;
+}
 /*
 #after:before { content: "\f182" }
 #clear:before { content: "\f204" }

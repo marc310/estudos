@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html class="splash">
 <head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="parts/theme/css/music.css" type="text/css" rel="stylesheet"/>
-		<!-- <link href="parts/theme/css/musictheme.css" type="text/css" rel="stylesheet"/> -->
-		<link href="parts/theme/imgs/music.png" type="image/png" rel="shortcut icon">
-		<script src="music.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145014090-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145014090-1');
+</script>
+
+
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="parts/theme/css/music.css" type="text/css" rel="stylesheet"/>
+	<!-- <link href="parts/theme/css/musictheme.css" type="text/css" rel="stylesheet"/> -->
+	<link href="parts/theme/imgs/music.png" type="image/png" rel="shortcut icon">
+	<script src="music.js"></script>
 
 		<!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -32,7 +44,7 @@
     <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
-		<title id="title">CodeX :: Music Player ::</title>
+	<title id="title">PlayCodeX :: Music Player ::</title>
 </head>
 
 <body onload="init()">

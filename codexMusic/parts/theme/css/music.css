@@ -207,7 +207,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 	border-radius: 3px;
 	cursor: zoom-in;
 } */
-	/* #player.zoom > #cover {
+	 #player.zoom > #cover {
 		min-width: 300px;
 		min-height: 300px;
 		max-width: 300px;
@@ -225,7 +225,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 	}
 		#player.fullzoom #cover { cursor: zoom-out }
 		#player.fullzoom #current { margin-top: .25em }
-		#player.fullzoom #seek { margin-bottom: .25em } */
+		#player.fullzoom #seek { margin-bottom: .25em } 
 
 /* #current {
 	max-width: calc(100% - 8.5em);
@@ -237,7 +237,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 		text-overflow: ellipsis;
 	}*/
 
-#folder, #song { cursor: alias }
+/*#folder, #song { cursor: alias }*/
 
 #song {
 	font-weight: bold;
@@ -313,6 +313,15 @@ li.over { border-top: 1px dotted #ef6c00 }
 	}
 	#clear.drop { color: #ef6c00 }
 */
+
+
+#cover {
+	filter: brightness(60%) grayscale(40%) invert(100%);
+	transition: filter .5s, max-width .5s, max-height .5s, min-width .5s, min-height .5s, opacity .1s;
+}
+	#cover:hover, #cover.nofade { filter: brightness(100%) grayscale(0%) invert(100%) }
+
+	
 #playlist {
 	min-height: 2.25em;
 	max-height: 10.25em;
@@ -409,7 +418,7 @@ li.over { border-top: 1px dotted #ef6c00 }
 	/*font-family: Foundation;*/
 	text-align: center;
 }
-
+/*
 #after:before { content: "\f182" }
 #clear:before { content: "\f204" }
 #crossfade:before { content: "\f1b2" }
@@ -418,14 +427,14 @@ li.over { border-top: 1px dotted #ef6c00 }
 #import:before { content: "\f17f" }
 #load:before { content: "\f180" }
 #splash:before { content: "\f1ed" }
-/* #library:before { content: "\f17b" } */
+ #library:before { content: "\f17b" } 
 #lock:before { content: "\f16a" !important }
 	#lock.on:before { content: "\f20a" !important }
 #next:before { content: "\f17c" }
 #options:before { content: "\f214" }
  #player:before { content: "\f153" } 
 #playlistbtn:before { content: "\f18e" }
-/* #playlistdiv:before { content: "\f103" } */
+ #playlistdiv:before { content: "\f103" } 
 #playpause:before, #playlibrary:before { content: "\f198" }
 	#playpause.playing:before { content: "\f191" }
 #previous:before { content: "\f19c" }
@@ -451,3 +460,4 @@ li.over { border-top: 1px dotted #ef6c00 }
 button.on:before { content: "\f126" !important }
 button.whatsapp:before { content: "\f1a6" }
 
+*/

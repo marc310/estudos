@@ -39,16 +39,16 @@
                       data-position="top" 
                       data-delay="50" 
                       data-tooltip="Mostrar Biblioteca">
-                        <i class="large mdi-editor-insert-chart"></i></a>
+                        <i class="mdi-av-my-library-music"></i></a>
                     </li>
 
                     <li style="margin-left: 10px">
-                      <a class="btn-floating tooltipped yellow darken-1" 
+                      <a class="btn-floating tooltipped orange darken-1" 
                       onclick="eList();"
                       data-position="top" 
                       data-delay="50" 
                       data-tooltip="Mostrar Fila de Reprodução">
-                      <i class="large mdi-editor-format-quote"></i></a>
+                      <i class="mdi-av-queue-music"></i></a>
                     </li>
 
                     <li style="margin-left: 10px">
@@ -57,16 +57,18 @@
                       data-position="top" 
                       data-delay="50" 
                       data-tooltip="Mostrar Opções">
-                      <i class="large mdi-editor-publish"></i></a>
+                      <i class="mdi-action-assessment"></i></a>
                     </li>
 
                     <li style="margin-left: 10px">
                       <a class="btn-floating tooltipped blue" 
                       onclick="clearPlaylist()"
+                      ondragover="allowDrop(event)" 
+                      ondrop="removeItem(event)"
                       data-position="top" 
                       data-delay="50" 
                       data-tooltip="Limpar Fila de Reprodução">
-                      <i class="large mdi-editor-attach-file"></i></a>
+                      <i class="mdi-communication-clear-all"></i></a>
                     </li>
 
                   </ul>

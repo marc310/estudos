@@ -25,8 +25,8 @@
     onclick="playPause()"
     data-position="top" 
     data-delay="50" 
-    data-tooltip="Play or pause (Space)" 
-    <i class="mdi-av-play-circle-fill"></i></a>
+    data-tooltip="Play or pause (Space)" >
+    <i id="iconPlay" class="mdi-av-play-arrow"></i></a>
 
     <a class="btn-floating tooltipped btn-flat waves-effect waves-light grey dark-1 white-text" id="stop" 
     onclick="stop()"

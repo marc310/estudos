@@ -17,7 +17,7 @@
 						</div>
 					</li>
 
-					<li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Controles</a>
+					<li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
 					</li>
 
 					<li class="no-padding">

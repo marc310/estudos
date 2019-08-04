@@ -1,7 +1,0 @@
-{
-  "name": "devAndroid",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}

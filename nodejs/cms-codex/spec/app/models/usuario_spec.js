@@ -142,7 +142,7 @@ describe("O modelo de usuário", function() {
         usuario.salvar(function(retorno2){
           var usuario2 = new Usuario({nome:"marcelo", login:"marcelo", senha:"c310", email:"marcelo@marcelomotta.com"});
           usuario2.salvar(function(retorno3){
-            Usuario.buscarPorNome("Marcelo", function(retorno4){
+            Usuario.buscarPorNome("Marcelo com teste", function(retorno4){
               expect(retorno4.erro).toBe(false);
               expect(retorno4.usuarios.length).toBe(1);
               expect(retorno4.usuarios[0].nome).toBe(nome);

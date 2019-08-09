@@ -45,7 +45,7 @@ adicionando jshint e mysql ao package.json
 
 testes pelo jshint sendo configurados no package.json
 
->> npm run-script jshint
+>> npm run-script jsh
 
 //-----------------------------------------------------------------------------//
 
@@ -53,7 +53,7 @@ iniciando desenvolvimento TDD com Jasmine
 
 adicionado ao package.json
 
->> npm run-script testUsuarioModel
+>> npm run-script test
 
 //-----------------------------------------------------------------------------//
 
